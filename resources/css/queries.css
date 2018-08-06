@@ -1,0 +1,111 @@
+/* Big tablets from 1024px to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    .row { padding: 0 2%; }
+    
+    .works-step:last-of-type { margin-bottom: 65px; }
+    
+    .btn-app img {
+        height: 50px;
+        width: auto;
+    }
+    
+    
+}
+
+/* Small tablets to big tablets: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    body {font-size: 18px;}
+    section { padding: 60px 0;}
+    .steps-box:first-child { margin-top: 10px; }
+    .steps-box:last-child { margin-top: 30px; }
+    .app-screen {
+        width: 55%;
+        height: auto;
+    }
+    .works-step { margin-bottom: 30px; }
+    .works-step:last-of-type { margin-bottom: 50px; }
+    .works-step div {
+        width: 61px;
+        height: 61px;
+        padding: 15px;
+    }
+    .btn-app img {
+        height: 50px;
+        width: auto;
+    }
+    .city-features { font-size: 90%; }
+    .plan-box {
+        width: 100%;
+        margin-left: 0%;
+        font-size: 80%;
+
+    }
+    
+    .plan-price { font-size: 250%; }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    
+    body { font-size: 16px; }
+    section { padding: 20px 0; }
+    .row,
+    .hero-text-box { padding: 0 4%; }
+    .col { 
+        width: 100%;
+        margin: 0 0 4% 0;   
+    }
+    .plan-box { 
+        width: 100%; 
+        margin-left: 0; 
+    }
+    .main-nav { display: none; }
+    h2 { font-size: 150%; }
+    h1 { font-size: 180%; }
+    .long-copy {
+        width: 90%;
+        text-align: justify;
+        margin-left: 5%;
+        
+    }
+    .app-screen { width: 40%; }
+    .steps-box:first-child { text-align: center; }
+    .works-step div { 
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        font-size: 120%;
+        margin-right: 15px;
+    }
+    .works-step:last-of-type { margin-bottom: 40px; }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    h2 { font-size: 110%; }
+    h1 { font-size: 170%; }
+    .footer-nav { 
+        margin-bottom: 20px;
+        font-size: 70%;
+        margin-left: 30px;
+    }
+    .social-links { margin-right: 90px; }
+    .footer-nav li,
+    .social-links li { margin-right: 10px; }
+    .works-step div {
+        width: 60px;
+        height: 60px;
+        padding: 18px;
+    }    
+    .btn-app img {
+        height: 40px;
+        width: auto;
+        margin-left: 20px;  
+    }
+}

@@ -1,0 +1,608 @@
+/************************************************/
+/********* BASIC SETUP *******/
+/************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box{
+    padding: 1%; 
+}
+
+.clearfix{zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.invisible {
+   color: transparent;
+}
+
+/************************************************/
+/********* REUSABLE COMPONENTS *******/
+/************************************************/
+
+/*** HEADINGS ***/
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 180%;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #e67e22;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*** PARAGRAPHS ***/
+
+.long-copy {
+    font-size: 105%;
+    line-height: 145%;
+    width: 70%;
+    margin: 0 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/*** LINKS ***/
+
+a:link,
+a:visited {
+    color: #e67e22;
+    border-bottom: 1px solid #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+a:hover,
+a:active {
+    border-bottom: 1px solid transparent;
+    color: #555;
+} 
+
+/*** BUTTONS ***/
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: 300;
+    border-radius: 60px;
+    
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #e67e22;
+    border: 1px solid transparent;
+    margin-right: 10px;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    color: #e67e22;
+    border: 1px solid #e67e22;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    border: 1px solid #cf6d17;
+    background-color: #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    background-color: #cf6d17;
+    color: #fff;
+}
+
+/*** ICONS ***/
+
+.icon-large {
+    font-size: 300%;
+    color: #e67e22;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    color: #e67e22;
+    width: 30px;
+    text-align: center;
+    font-size: 110%;
+    margin-right: 10px;
+    
+/*    To align text and icons vertical*/
+    line-height: 110%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/*** ROW CONTAINER ***/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/************************************************/
+/********* HEADER SECTION *******/
+/************************************************/
+
+/*** HEADER ***/
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: auto;
+}
+
+/*** HERO TEXT WITH BUTTONS ***/
+
+.hero-text-box {
+    position: absolute;
+/*    width: 1140px;*/
+    margin-top:50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*** LOGO IMAGE ***/
+
+.logo {
+    height: 150px;
+    width: auto;
+    margin-top: 20px;
+    float: left;
+}
+
+/*** NAVIGATION LINKS ***/
+
+.main-nav {
+    float: right;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 55px;
+    font-size: 90%;
+}
+
+.main-nav li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 1px solid #cf6d17;
+
+}
+
+/************************************************/
+/********* FEATURES SECTION *******/
+/************************************************/
+
+.features-section .long-copy {
+    margin-bottom: 30px;
+}
+
+/************************************************/
+/********* MEALS SECTION *******/
+/************************************************/
+
+.favourite-meal-section {
+    padding: 0;
+}
+
+.meals-showcase {
+    width: 100%;
+    list-style: none;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+    
+}
+
+.meals-photo {
+    cursor:auto;
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    margin: 0;
+    overflow: hidden;
+}
+
+.meals-photo p {
+    width: 70%;
+    z-index: 0;
+    position: absolute;
+    bottom: 90px;
+    left: 50px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    text-transform: capitalize;
+    color: #fff;
+    transition: display 0.5s;
+}
+
+.meals-photo img {
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meals-photo img:hover {
+    opacity: 0.3;
+    z-index: 0;
+    transform: scale(1.03);
+}
+
+/************************************************/
+/********* STEPS SECTION *******/
+/************************************************/
+
+.steps-section {
+    background-color: #efefef;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+    height: auto;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-step div {
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #e67e22;
+    padding: 5px;
+    font-size: 140%;
+    float: left;
+    margin-right: 25px;
+
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+/************************************************/
+/********* CITIES SECTION *******/
+/************************************************/
+
+.box img {
+    width: 100%;
+    height: auto; 
+    margin-bottom: 15px;
+}
+
+.city-features {
+    margin-bottom: 5px;
+}
+
+/************************************************/
+/********* TESTIMONIAL SECTION *******/
+/************************************************/
+
+.testimonial-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+blockquote {
+    line-height: 145%;
+    font-style: italic;
+    padding: 2%;
+    margin-top: 40px;
+    position: relative;
+}
+
+blockquote:before {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+}
+
+cite {
+    display: block;
+    margin-top: 25px;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+/************************************************/
+/********* PLAN SECTION *******/
+/************************************************/
+
+.plan-section {
+    background-color: #e6e1e1;
+}
+
+.plan-box {
+    border-radius: 5px;
+    background-color: #fff;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    color: #e67e22
+}
+
+.plan-price span {
+    font-size: 30%;
+}
+
+.meal-price {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+/************************************************/
+/********* CONTACT SECTION *******/
+/************************************************/
+
+.contact-form {
+    width: 60%;
+    margin: 20px auto 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #b1b1b1;
+    padding-left: 10px
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{
+    outline-color: #e67e22;
+}
+
+/************************************************/
+/********* FOOTER SECTION *******/
+/************************************************/
+
+footer {
+    padding: 40px;
+    background-color: #1f1f1f;
+    color: #9d9d9d;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+    font-size: 80%;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+    font-size: 120%;
+}
+
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    float: left;
+    margin-right: 30px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    border: 0;
+    color: #9d9d9d;
+    transition: color 0.2s;
+    
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    
+    color: #c3c3c3;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-googleplus,
+.ion-logo-instagram {
+    transition: color 0.2s;
+}
+
+.ion-logo-facebook:hover,
+.ion-logo-facebook:active {
+    color: #4267b2;
+}
+
+.ion-logo-twitter:hover,
+.ion-logo-twitter:active {
+    color: #1da1f2;
+}
+
+.ion-logo-googleplus:hover,
+.ion-logo-googleplus:active {
+    color: #db4437;
+}
+
+.ion-logo-instagram:hover,
+.ion-logo-instagram:active {
+    color: #f46f30;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 85%;
+}
+
+footer p span {
+    font-weight: 400;
+}
