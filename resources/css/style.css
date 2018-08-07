@@ -290,6 +290,7 @@ header{
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.97);
+    -webkit-box-shadow: 0 2px 2px #e4e4e4;
     box-shadow: 0 2px 2px #e4e4e4;
     z-index: 1;
 }
@@ -697,10 +698,11 @@ footer p span {
 .js--wp-2, 
 .js--wp-3 {
     opacity: 0;
+    -webkit-transition-duration: 1s;
     transition-duration: 1s;
 }
 
-.js--wp-4 { transition-duration: 1s;}
+.js--wp-4 { -webkit-transition-duration: 1s; transition-duration: 1s;}
 
 .js--wp-1.animated, 
 .js--wp-2.animated, 
