@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -106,6 +107,7 @@ a:visited {
     border-bottom: 1px solid #e67e22;
     text-decoration: none;
     padding-bottom: 1px;
+    -webkit-transition: color 0.2s, border-bottom 0.2s;
     transition: color 0.2s, border-bottom 0.2s;
 }
 
@@ -135,6 +137,7 @@ input[type=submit] {
     background-color: #e67e22;
     border: 1px solid transparent;
     margin-right: 10px;
+    -webkit-transition: background-color 0.2s, border 0.2s;
     transition: background-color 0.2s, border 0.2s;
 }
 
@@ -142,6 +145,7 @@ input[type=submit] {
 .btn-ghost:visited {
     color: #e67e22;
     border: 1px solid #e67e22;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -196,6 +200,7 @@ input[type=submit]:active {
 /*** HEADER ***/
 
 header{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -212,6 +217,7 @@ header{
     margin-top:50px;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -246,6 +252,7 @@ header{
     color: #fff;
     padding: 0 0 10px 0;
     border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -303,6 +310,7 @@ header{
     word-spacing: 4px;
     text-transform: capitalize;
     color: #fff;
+    -webkit-transition: display 0.5s;
     transition: display 0.5s;
 }
 
@@ -310,13 +318,18 @@ header{
     z-index: 1;
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meals-photo img:hover {
     opacity: 0.3;
     z-index: 0;
+    -webkit-transform: scale(1.03);
     transform: scale(1.03);
 }
 
@@ -398,6 +411,7 @@ header{
 /************************************************/
 
 .testimonial-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/back-customers.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -446,6 +460,7 @@ cite img {
     background-color: #fff;
     width: 90%;
     margin-left: 5%;
+    -webkit-box-shadow: 0 2px 2px #efefef;
     box-shadow: 0 2px 2px #efefef;
 }
 
@@ -506,6 +521,18 @@ textarea {
     border: 1px solid #ccc;
 }
 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #b1b1b1;
+    padding-left: 10px
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #b1b1b1;
+    padding-left: 10px
+}
+
 input::placeholder,
 textarea::placeholder {
     color: #b1b1b1;
@@ -560,6 +587,7 @@ footer {
 .social-links li a:visited {
     border: 0;
     color: #9d9d9d;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
     
 }
@@ -574,6 +602,7 @@ footer {
 .ion-logo-twitter,
 .ion-logo-googleplus,
 .ion-logo-instagram {
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
