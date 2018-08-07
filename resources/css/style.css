@@ -230,6 +230,14 @@ header{
     float: left;
 }
 
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    margin-top: 5px;
+    float: left;
+}
+
 /*** NAVIGATION LINKS ***/
 
 .main-nav {
@@ -260,6 +268,36 @@ header{
 .main-nav li a:active {
     border-bottom: 1px solid #cf6d17;
 
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 2px 2px #e4e4e4;
+}
+
+.sticky .main-nav {
+    margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: #555;
+    padding: 15px 0;
+}
+
+.sticky .logo {
+    display: none;
+}
+.sticky .logo-black {
+    display: block;
+}
+
+.sticky li a {
+    color: #555;
 }
 
 /************************************************/
