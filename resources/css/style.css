@@ -674,3 +674,20 @@ footer p {
 footer p span {
     font-weight: 400;
 }
+
+/************************************************/
+/********* OTHER ANIMATIONS SECTION *******/
+/************************************************/
+
+.js--wp-1, 
+.js--wp-2, 
+.js--wp-3 {
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.js--wp-4 { transition-duration: 1s;}
+
+.js--wp-1.animated, 
+.js--wp-2.animated, 
+.js--wp-3.animated { opacity: 1; }
