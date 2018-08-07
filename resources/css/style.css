@@ -270,6 +270,20 @@ header{
 
 }
 
+.mobile-nav-icon {
+    cursor: pointer;
+    float: right;
+    margin-top: 30px;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+
 .sticky {
     position: fixed;
     top: 0;

@@ -66,3 +66,23 @@ $('a[href*="#"]')
         $('.js--wp-4').addClass('animated pulse');
     },{ offset: "50%"});
 });
+
+
+//Mobile navigation links
+
+$('.js--mobile-nav').click(function(){
+    let nav = $('.js--main-nav');
+    let mob_icon = $('.js--mobile-nav i');
+    
+    nav.slideToggle(200);
+    
+    if (mob_icon.hasClass('ion-md-menu')) {
+        mob_icon.addClass('ion-md-close');
+        mob_icon.removeClass('ion-md-menu');
+        
+    } else {
+        mob_icon.addClass('ion-md-menu');
+        mob_icon.removeClass('ion-md-close');
+    }
+    
+});
